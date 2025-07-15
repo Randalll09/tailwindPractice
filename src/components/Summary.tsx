@@ -1,16 +1,16 @@
-import { useState } from "react";
-import { Calendar } from "./ui/calendar";
-import { DatePicker } from "./ui/datePicker";
+import {useState} from "react";
+import {Calendar} from "./ui/calendar";
+import {DatePicker} from "./ui/datePicker";
 
 const Summary = () => {
   const today = new Date();
   const [date, setDate] = useState(today);
   return (
-    <div className="w-full h-80 box grid p-3 grid-cols-3 gap-3 shadow-sm border-1 border-slate-300">
-      <div className="col-span-2 bg-white h-full rounded-md border-1 border-slate-300 inset-shadow-xs"></div>
-      <div className="col-span-1 h-full">
+    <div className="grid w-full grid-cols-3 gap-3 p-3 shadow-sm h-80 box border-1 border-slate-300">
+      <div className="h-full col-span-2 bg-white rounded-md border-1 border-slate-300 inset-shadow-xs"></div>
+      <div className="h-full col-span-1">
         <div className="w-full text-center">{date.toLocaleDateString()}</div>
-        <div className="mx-auto w-fit mt-3">
+        <div className="mx-auto mt-3 w-fit">
           <DatePicker date={date} setDate={setDate} />
         </div>
       </div>
