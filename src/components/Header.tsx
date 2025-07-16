@@ -22,6 +22,7 @@ const Header = () => {
             <p>DASHBOARD</p>
           </div>
         </div>
+
         <div className="flex items-center gap-2">
           <p>Theme</p>
           <Switch checked={theme === "dark"} onCheckedChange={toggleTheme} />
