@@ -4,7 +4,7 @@ import {useThemeStore} from "../utils/storage";
 const Header = () => {
   const {theme, toggleTheme} = useThemeStore();
   return (
-    <div className="w-full pt-5 text-slate-700 dark:text-slate-50">
+    <div className="w-full pt-5 text-txt ">
       <header className="flex flex-row justify-between w-full gap-3 px-5 py-4 rounded-full shadow-sm h-fit dark:bg-slate-900 bg-slate-50 border-1 border-slate-300">
         <div className="flex gap-4">
           <div className="flex">

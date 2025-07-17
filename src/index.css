@@ -109,9 +109,13 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
   --color-box-bg: var(--color-slate-900);
+  --color-secondary: var(--color-slate-950);
+  --color-txt: var(--slate-300);
 }
 @theme {
   --color-box-bg: var(--color-slate-50);
+  --color-secondary: var(--color-white);
+  --color-txt: var(--slate-700);
 }
 @layer base {
   * {

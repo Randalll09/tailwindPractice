@@ -3,6 +3,7 @@ import Summary from "./components/Summary";
 import Todo from "./components/Todo";
 import {useState, useEffect} from "react";
 import {useThemeStore} from "./utils/storage";
+import DefaultBox from "./components/ui/defaultBox";
 function App() {
   const {theme} = useThemeStore();
 
@@ -17,8 +18,8 @@ function App() {
       <Summary />
       <div className="grid grid-cols-3 gap-6">
         <Todo />
-        <div className="w-full box"></div>
-        <div className="w-full box"></div>
+        <DefaultBox className="w-full"></DefaultBox>
+        <DefaultBox className="w-full"></DefaultBox>
       </div>
       <div></div>
     </div>
